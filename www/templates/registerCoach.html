@@ -1,26 +1,32 @@
 <ion-view view-title="Coach register">
     <ion-content class="padding">
-        <div class="list">
-            
-            <label class="item item-input">
-                <input type="email" placeholder="Email">
-            </label>
-            <label class="item item-input">
-                <input type="text" placeholder="First Name">
-            </label>
-            <label class="item item-input">
-                <input type="text" placeholder="Last Name">
-            </label>
-            <label class="item item-input">
-                <input type="password" placeholder="Password">
-            </label>
-            <label class="item item-input">
-                <input type="password" placeholder="Repeat password">
-            </label>
-        </div>
         
-        <button class="button button-block button-positive" ui-sref="registerTeam">
-            Make a team
-        </button>
+             <div class="list">
+                <label class="item item-input">
+                    <input type="text" placeholder="First Name">
+                </label>
+                <label class="item item-input">
+                    <input type="text" placeholder="Last Name">
+                </label>
+                <label class="item item-input">
+                    <input type="text" placeholder="Phone number (optional)">
+                </label>
+                <label class="item item-input">
+                    <input type="email" placeholder="Email">
+                </label>
+                <label class="item item-input">
+                    <input type="password" placeholder="Password">
+                </label>
+                <label class="item item-input">
+                    <input type="password" placeholder="Repeat password">
+                </label>
+            </div>
+            <button class="button button-block button-positive" ui-sref="makeTeam">
+                Make a team
+            </button>
+            <button class="button button-block button-positive" ui-sref="joinTeam">
+                Join an existing team
+            </button>
+   
     </ion-content>
 </ion-view>

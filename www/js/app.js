@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic'])
+angular.module('starter', ["ionic", "starter.controllers", "RESTConnection"])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -30,32 +30,50 @@ angular.module('starter', ['ionic'])
     url: '/',
     templateUrl: 'templates/landing.html',
   })
-  .state('login', {
-    url: '/login',
-    templateUrl: 'templates/login.html',
+  .state('loginC', {
+    url: '/loginC',
+    templateUrl: 'templates/loginC.html',
+    controller: "LoginCoachCtrl"
   })
-   .state('userSelect', {
-    url: '/userSelect',
-    templateUrl: 'templates/userSelect.html',
+   .state('loginP', {
+    url: '/loginP',
+    templateUrl: 'templates/loginP.html',
+    controller: "LoginPlayerCtrl"
+  })
+   .state('userSelectR', {
+    url: '/userSelectR',
+    templateUrl: 'templates/userSelectR.html',
+  })
+   .state('userSelectL', {
+    url: '/userSelectL',
+    templateUrl: 'templates/userSelectL.html',
   })
   .state('registerPlayer', {
     url: '/registerPlayer',
     templateUrl: 'templates/registerPlayer.html',
   })
-   .state('findTeam', {
-    url: '/findTeam',
-    templateUrl: 'templates/findTeam.html',
-  })
    .state('registerCoach', {
     url: '/registerCoach',
     templateUrl: 'templates/registerCoach.html',
   })
-   .state('registerTeam', {
-    url: '/registerTeam',
-    templateUrl: 'templates/registerTeam.html',
+   .state('makeTeam', {
+    url: '/makeTeam',
+    templateUrl: 'templates/makeTeam.html',
+  })
+   .state('joinTeam', {
+    url: '/joinTeam',
+    templateUrl: 'templates/joinTeam.html',
   })
     .state('about', {
     url: '/about',
     templateUrl: 'templates/about.html',
+  })
+    .state('lobbyC', {
+    url: '/lobbyC',
+    templateUrl: 'templates/lobbyC.html',
+  })
+    .state('lobbyP', {
+    url: '/lobbyP',
+    templateUrl: 'templates/lobbyP.html',
   });
 });
