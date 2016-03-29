@@ -32,26 +32,26 @@ Make it easier to organize rides. Used by sports teams to help find rides for al
 
 #  Models 
 
-*Coaches 
-    1.First Name
-    2.Last Name
-    3.Phone Number
-
-*Teams 
-    1.Team Name
-    2.Sport
-    3.Team key
-    4.games
-
-*Players
-    1.First Name
-    2.Last Name
-    3.Phone Number
-
-*Teams On 
-    1.User Id
-    2.Team Id
-    3.Team Key
-    4.Games
-
+*Coaches  
+    1.First Name  
+    2.Last Name  
+    3.Phone Number  
+  
+*Teams  
+    1.Team Name  
+    2.Sport  
+    3.Team key  
+    4.games  
+  
+*Players  
+    1.First Name  
+    2.Last Name 
+    3.Phone Number  
+  
+*Teams On   
+    1.User Id  
+    2.Team Id  
+    3.Team Key  
+    4.Games  
+  
 
