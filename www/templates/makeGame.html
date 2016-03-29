@@ -1,0 +1,27 @@
+<ion-view view-title="Make game">
+    <ion-content class="padding">
+        <form name="makeGame" ng-submit="savegame()">
+            <div class="list list-inset">
+
+                <label class="item item-input" ng-class="{ 'has-errors' : makeGame.opponent.$invalid && makeGame.$submitted}">
+                    <input type="text" placeholder="Opponent" name="opponent" ng-model="games.opponent" required>
+                </label>
+                
+                <div class="row">
+                    <label class="item item-input col" ng-class="{ 'has-errors' : makeGame.date.$invalid && makeGame.$submitted}">
+                        <input placeholder="Date" type="text" onfocus="this.type='date'; this.setAttribute('onfocus','');this.blur();this.focus();" name="date" ng-model="games.date" required>
+                    </label>
+                    <label class="item item-input col" ng-class="{ 'has-errors' : makeGame.time.$invalid && makeGame.$submitted}">
+                        <input placeholder="Time" type="text" onfocus="this.type='time'; this.setAttribute('onfocus','');this.blur();this.focus();" name="time" ng-model="games.time" required>
+                    </label>
+                </div>
+
+                <label class="item item-input" ng-class="{ 'has-errors' : makeGame.where.$invalid && makeGame.$submitted}">
+                    <input type="text" placeholder="Where" name="where" ng-model="games.where" required>
+                </label>
+            </div>
+
+            <button type="submit">Make game</button>
+        </form>
+    </ion-content>
+</ion-view>

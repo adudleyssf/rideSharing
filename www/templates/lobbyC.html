@@ -1,5 +1,15 @@
 <ion-view view-title="Menu">
-    <ion-content class="padding">
-        <P>Welcome Satan</P>
-    </ion-content>
+  <ion-nav-buttons side="right">
+    <button class="button" ui-sref="optionsCoach">
+      Options
+    </button>
+  </ion-nav-buttons>
+  <ion-content class="padding">
+    <item class="item item-list" ng-repeat="game in games">
+      vs {{game.opponent}} at {{game.time}} on {{game.date}}
+    </item>
+    <button class="button button-block button-positive" ui-sref="makeGame">
+      Make Game
+    </button>
+  </ion-content>
 </ion-view>

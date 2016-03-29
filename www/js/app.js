@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ["ionic", "starter.controllers", "RESTConnection"])
+angular.module('starter', ["ionic", "starter.controllers", "RESTConnection", "joinTeamModule"])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -51,10 +51,12 @@ angular.module('starter', ["ionic", "starter.controllers", "RESTConnection"])
   .state('registerPlayer', {
     url: '/registerPlayer',
     templateUrl: 'templates/registerPlayer.html',
+    controller: "RegisterPlayerCtrl"
   })
    .state('registerCoach', {
     url: '/registerCoach',
     templateUrl: 'templates/registerCoach.html',
+    controller: "RegisterCoachCtrl",
   })
    .state('makeTeam', {
     url: '/makeTeam',
@@ -63,6 +65,7 @@ angular.module('starter', ["ionic", "starter.controllers", "RESTConnection"])
    .state('joinTeam', {
     url: '/joinTeam',
     templateUrl: 'templates/joinTeam.html',
+    controller: "JoinTeamCtrl"
   })
     .state('about', {
     url: '/about',
@@ -71,9 +74,20 @@ angular.module('starter', ["ionic", "starter.controllers", "RESTConnection"])
     .state('lobbyC', {
     url: '/lobbyC',
     templateUrl: 'templates/lobbyC.html',
+    controller: "LobbyCoachCtrl"
   })
     .state('lobbyP', {
     url: '/lobbyP',
     templateUrl: 'templates/lobbyP.html',
+    controller: "LobbyPlayerCtrl"
+  })
+      .state('makeGame', {
+    url: '/makeGame',
+    templateUrl: 'templates/makeGame.html',
+    controller: 'MakeGameCtrl'
+  })
+   .state('optionsCoach', {
+    url: '/optionsCoach',
+    templateUrl: 'templates/optionsCoach.html',
   });
 });

@@ -1,11 +1,12 @@
 <ion-view view-title="Find an existing team">
     <ion-content class="padding">
-
-        <label class="item item-input">
-            <input type="text" placeholder="Team ID">
-        </label>
-        <button class="button button-block button-positive">
-            Sign up
-        </button>
+        <form name="joinTeam_Name"  novalidate ng-submit="joinTeam(joinTeam_Name)">
+            <label class="item item-input">
+                <input type="text" placeholder="Team ID" ng-model="join.teamId" required>
+            </label>
+            <button class="button button-block button-positive" type="submit">
+                Join
+            </button>
+        </form>
     </ion-content>
 </ion-view>
