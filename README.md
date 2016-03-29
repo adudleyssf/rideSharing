@@ -41,18 +41,21 @@ Make it easier to organize rides. Used by sports teams to help find rides for al
 - Coaches  
   - First Name  
   - Last Name  
-  - Phone Number  
+  - Phone Number 
+  
   
 -Teams  
   - Team Name  
   - Sport  
   - Team key  
-  - games  
+  - games 
+  
   
 -Players  
   - First Name  
   - Last Name 
   - Phone Number  
+  
   
 -Teams On   
   - .User Id  
