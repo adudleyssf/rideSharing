@@ -6,18 +6,18 @@
      `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
     ----------------------------------------------------------------- 
 
-# Header 1 Problem to solve  #
+#  Problem to solve  
 
 Make it easier to organize rides. Used by sports teams to help find rides for all players and coaches. Three types of users coaches( who can make games, make new teams, join, teams, and offer or take rides) players (who can take or offer rides for games, can join a new team, and look at who is on the current team), and Team Captain ( who can take or offer rides for games, can join a new team,  look at who is on the current team, and can make new games).
 
-# Header 1 Use Cases #
+# Use Cases 
 
 - A user registers to use the app on their phone as either coach or player, entering their information including email and password. 
 
 - A user logs in to the app on their phone with their email and password, they can see any games that are made and say if they are giving or taking rides to this game
 
 
-# Header 1 Features#
+#  Features
 
 
 -Can register
@@ -30,28 +30,28 @@ Make it easier to organize rides. Used by sports teams to help find rides for al
 
 
 
-# Header 1  Models #
+#  Models 
 
-# Header 2 Coaches #
--First Name
--Last Name
--Phone Number
+*Coaches 
+    1.First Name
+    2.Last Name
+    3.Phone Number
 
-# Header 2 Teams #
--Team Name
--Sport
--Team key
--games
+*Teams 
+    1.Team Name
+    2.Sport
+    3.Team key
+    4.games
 
-# Header 2 Players #
--First Name
--Last Name
--Phone Number
+*Players
+    1.First Name
+    2.Last Name
+    3.Phone Number
 
-# Header 2 Teams On #
--User Id
--Team Id
--Team Key
--games
+*Teams On 
+    1.User Id
+    2.Team Id
+    3.Team Key
+    4.Games
 
 
